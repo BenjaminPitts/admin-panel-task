@@ -352,7 +352,7 @@ a:hover {
   margin-left: 1rem;
 }
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1500px) {
 .circle1 {
   width: 5%;
   height: 28%;
