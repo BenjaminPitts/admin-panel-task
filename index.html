@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>hgapp-Admin-Panel</title>
     <link rel='stylesheet' href='main.css'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=source-sans-pro'
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=source-sans-pro'>  
   </head>
   <body>
+  
     <header>
     <h1>Admin Panel Task for hgapp</h1>
     <h5><i>building out some of the front end components for this development task, see UXPin model <a href='https://preview.uxpin.com/2a22ca73d804ad4c2a30eeb7a20f772e463b6062#/pages/142231162/specification/sitemap' target='blank'>here</a></i></h5>
@@ -60,7 +61,7 @@
       </div>              
     </div>
     
-    <div class='circle2'></div>
+    <div class='circle-empty' onClick="this.classList.toggle('active');"></div>
     <div class ='dash'></div>
     <div class='wizard-box3'>
       <div class='img-box3'>
@@ -71,7 +72,7 @@
       </div>              
     </div>
     
-    <div class='circle3'></div>
+    <div class='circle-empty' onClick="this.classList.toggle('active');"></div>
     <div class ='dash'></div>
     <div class='wizard-box4'>
       <div class='img-box4'>
@@ -82,7 +83,7 @@
       </div>              
     </div>
     
-    <div class='circle4'></div>
+    <div class='circle-empty' onClick="this.classList.toggle('active');"></div>
     <div class ='dash'></div>
     <div class='wizard-box5'>
       <div class='img-box5'>
@@ -92,7 +93,7 @@
         Enjoy Hosted Graphite
       </div>              
     </div>
-    <div class='circle5'></div>  
+    <div class='circle-empty' onClick="this.classList.toggle('active');"></div>  
   </div>      
 </div><br>
 
@@ -171,5 +172,15 @@
 </div>  
   <br>
     <footer>Built by Benjamin Pitts: <a href='https://benjaminjackpitts.dev/'>Software Engineer</a> | <a href='https://benjaminpitts-musician.herokuapp.com/'>Musician</a></footer>
+    
+<script>
+  for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL) {
+    document.links[i].className = 'active';
+    }
+  }
+</script>
+    
+    
   </body>
 </html>
